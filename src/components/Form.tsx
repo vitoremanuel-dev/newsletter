@@ -9,7 +9,7 @@ const Form = () => {
 
   const [erros, setErrors] = useState<User | null>(null);
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     setErrors(null);
